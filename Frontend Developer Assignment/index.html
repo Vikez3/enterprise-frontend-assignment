@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Search book</h1>
+      <form class="search-form">
+        <input
+          type="search"
+          name="searchInput"
+          id="searchInput"
+          class="search-input"
+        />
+        <button type="submit" id="searchInputBtn" class="search-btn">
+          Search
+        </button>
+        <div class="search-type-container">
+          <h3 class="type-box-heading">Search by:</h3>
+          <div class="type-box">
+            <input
+              type="radio"
+              id="authorCheck"
+              name="searchType"
+              value="author"
+              checked
+            />
+            <label for="authorCheck">Author</label>
+          </div>
+          <div class="type-box">
+            <input
+              type="radio"
+              id="titleCheck"
+              name="searchType"
+              value="title"
+            />
+            <label for="titleCheck">Title</label>
+          </div>
+          <div class="type-box">
+            <input
+              type="radio"
+              id="genreCheck"
+              name="searchType"
+              value="genre"
+            />
+            <label for="genreCheck">Genre</label>
+          </div>
+        </div>
+      </form>
+      <div id="dataList" class="data-list"></div>
+    </div>
+  </body>
+  <script src="./listofbooks.js"></script>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(to right, #79dcc9, #0028ff54);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+
+    .heading {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .search-form {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .search-input {
+            width: 73%;
+            padding: 15px 10px;
+            font-size: 18px;
+            border: 2px solid black;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        .search-btn {
+            width: 23%;
+            padding: 15px 10px;
+            border-radius: 10px;
+            border: 0;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1.2px;
+            background-color: #332cf2;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1d198e;
+            }
+        }
+
+        .search-type-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .type-box-heading {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .type-box {
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                &:not(:last-child) {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .data-list {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .book-box {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+
+    .container {
+        .search-form {
+            .search-input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .search-btn {
+                width: 100%;
+            }
+        }
+
+        .search-form .search-type-container .type-box {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-left: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+body {
+  background: linear-gradient(to right, #79dcc9, rgba(0, 40, 255, 0.3294117647));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+.container .heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container .search-form {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .search-form .search-input {
+  width: 73%;
+  padding: 15px 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.container .search-form .search-btn {
+  width: 23%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  background-color: #332cf2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container .search-form .search-btn:hover {
+  background-color: #1d198e;
+}
+.container .search-form .search-type-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .search-form .search-type-container .type-box-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container .search-form .search-type-container .type-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container .search-form .search-type-container .type-box:not(:last-child) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container .data-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .data-list .book-box {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.container .data-list .book-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .container .search-form .search-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container .search-form .search-btn {
+    width: 100%;
+  }
+  .container .search-form .search-type-container .type-box {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container .search-form .search-type-container .type-box:last-child {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
